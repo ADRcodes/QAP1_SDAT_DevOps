@@ -121,7 +121,7 @@ public class MovieServiceTest {
         service.addMovie(inception);
         UUID id = inception.getId();
 
-        service.addComment(id, "Mindbendy!");
+        service.addComment(id, "Mindbendingly decent!");
         Assertions.assertEquals(1, service.getMovieById(id).getComments().size());
 
         UUID fakeId = UUID.randomUUID();
