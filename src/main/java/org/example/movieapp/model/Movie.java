@@ -11,7 +11,7 @@ public class Movie {
     private int duration; // in minutes
     private List<String> genres;
     private double rating;
-    private List<String> comments;
+    private List<String> comments = new ArrayList<>();
 
     public Movie(String title, String director, int releaseYear, int duration, List<String> genres, double rating) {
         this.id = UUID.randomUUID();
